@@ -1,2 +1,11 @@
 # Cinemaniac
 Cinemaniac is an Android application which provides movie theaters nearby, and the movies on screen on these theaters.
+
+We have finally finished our app "CINEMANIAC" and managed to run it! We used Android 4.4 KitKat software in our application and Android Studio to write our code. We also used an emulator which has Android 4.4 Kitkat software and a real android smartphone which has Android 7.0 Nougat software to test the code. 
+
+Our application starts with a login page which allows users to sign up and sign in. 
+After the login page, a page which has two buttons is shown to user, however if an admin logs in an additional button shows up. The options are movies and movie theaters, and the additional button is admin page. The user will choose an option to continue.
+ When the user clicks on the movies button, the movie page will be opened.This page has two subheadings: movies on screen and upcoming movies. MySQL Database and HTML parsers are used in creation of this state.
+ Movies on screen lists the movies that are available in movie theaters and upcoming movies lists the movies that will be available in the next week. The user can choose a movie to see the details about that movie. The details include the poster, name, genre, IMDb rating and the plot of the movie.
+If the user chooses movie theaters from the main menu, the map showing the user's current location will be opened. The map contains a button named "Movie theaters". When this button is clicked, the nearest movie theaters are shown with purple icons. If the user clicks on an icon, he/she will be directed to the detailed page of that movie theater. The detailed page lists the movies available in the theater and their sessions and the theater address. The map part of our application is designed by the help of Google Maps API. 
+Almost everything covered in the requirement report is complete except two things. We are not able to show the movie details from the movie theaters page. The user can only see the sessions of the chosen movie from there. He/she can see movie details from the movies on screen or upcoming movies options. In addition, the users are not able to see or write comments about the films.
