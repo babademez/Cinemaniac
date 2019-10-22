@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.berke.databaseloginregister.AdminPage$PlaceholderFragment">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:id="@+id/textInputLayout">
+
+        <EditText
+            android:id="@+id/addMovieUrlInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/movie_url_add_text"
+            android:textAlignment="center"
+            android:inputType="textUri" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:id="@+id/textInputLayout3">
+
+        <EditText
+            android:id="@+id/addMovieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/movie_name_text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/isItOnScreenOrUpcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/is_it_on_screen_or_upcoming_text"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/addMovieButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:textAllCaps="false"
+        android:text="@string/add_the_movie_button_text"
+        android:layout_below="@+id/movieRadioGroup"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/movieRadioGroup"
+        android:layout_below="@+id/isItOnScreenOrUpcoming"
+        android:layout_alignEnd="@+id/addMovieButton"
+        android:layout_marginEnd="11dp">
+
+        <RadioButton
+            android:id="@+id/upComingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/upcoming_button_text" />
+
+        <RadioButton
+            android:id="@+id/onScreenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="23dp"
+            android:layout_weight="1"
+            android:text="@string/on_screen_text" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/statusOfAddMoviePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addMovieButton"
+        android:layout_alignBottom="@+id/addMovieButton"
+        android:layout_toEndOf="@+id/isItOnScreenOrUpcoming" />
+
+</RelativeLayout>
